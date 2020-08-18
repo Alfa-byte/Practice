@@ -1,0 +1,79 @@
+---
+########## GENERAL ##########
+
+######### Translate this config <3 #########
+
+# Plugin prefix
+prefix: "§l§9Practice §7~§r "
+
+# Practice join message
+join-message: "§e{player} §fhas joined! Players: {players}"
+
+# Practice quit message
+quit-message: "§e{player} §fhas lefted! Players: {players}"
+
+# Practice finish message. Puoi usare i seguenti tags: {winner}, {loser}, {elo_won}, {elo_lost}
+finish-message: "§e{winner} §c[+{elo_won}] §fwon a duel against §e{loser} §c[-{elo_lost}]"
+
+# Countdown per l'inizio della partita, P.S: Il tempo è in secondi
+countdown: 5
+
+# Elo base che avrà ogni player al primo join
+default-elo: 0
+
+# Elo ad aggiungere alla vittoria di un duello
+elo-to-add: 10
+
+# Elo da rimuovere alla sconfitta di un duello
+elo-to-sub: 5
+
+# Nome del mondo in cui aggiungere i floatingtext
+floatingtext-level: "Hub"
+
+# Immagine per il tasto 'Back' nelle UI
+back-button-image: "textures/items/stick"
+
+########## LOBBY SYSTEM ##########
+
+# Lobby System Items Usage: "slot:id:name"
+
+# Item del lobby sistem per vedere l'elo
+stats-item: "0:144:§eMy Stats"
+
+# Item del lobby sistem per vedere l'elo
+elo-item: "1:450:§eTop Elo"
+
+# Item del lobby sistem per vedere le arene
+duel-item: "2:276:§eDuels"
+
+# Item del lobby sistem per sfidare un player in un duello
+duel-stick-item: "3:280:§eDuel Stick"
+
+# Item del lobby sistem per sfidare un player in un duello
+duel-request-item: "4:347:§eDuel Requests"
+
+# Item del lobby sistem per vedere la propria duel history
+duel-history-item: "5:339:§eDuel History"
+
+########## LEGHE ##########
+
+# Lista delle leghe in base all'elo. Deve sempre esserci un rank con elo: 0
+ranks:
+  Bronzo I:
+    elo: 0
+    prefix: "[Bronzo I]"
+  Bronzo II:
+    elo: 100
+    prefix: "[Bronzo II]"
+  Bronzo III:
+    elo: 250
+    prefix: "[Bronzo III]"
+    
+########## RANKED GAMES ##########
+
+# Lista dei gruppi col numero massimo di partite ranked che possono giocare in un giorno (P.S. Non rimuovere la voce "default")
+groups:
+  default: 50
+  Vip: 75
+  Vip+: 100
+...

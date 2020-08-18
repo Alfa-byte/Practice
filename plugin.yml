@@ -1,0 +1,14 @@
+name: mPractice
+author: AlfaByte
+version: 0.0.1
+api: 3.15.0
+main: AlfaByte\Practice\Main
+depend: ["FormAPI", "PureChat", "PurePerms", "PreciseCpsCounter"]
+
+permissions:
+ practice:
+  children:
+   practice.command:
+    children:
+     practice.command.setarena:
+      default: op

@@ -1,0 +1,52 @@
+# KitName:
+#   floating-text-top: "x:y:z"
+#   image-path: "textures/items/stick"
+#   items:
+#   - "ID:Damage:Amount"
+#                 or
+#   - "ID:Damage:Amount:Enchant:Enchant_Level"
+#   helmet: "ID" or "ID:Enchant:Enchant_Level"
+#   chestplate: "ID" or "ID:Enchant:Enchant_Level"
+#   leggings: "ID" or "ID:Enchant:Enchant_Level"
+#   boots: "ID" or "ID:Enchant:Enchant_Level"
+#   commands:
+#   - "tell {player} Hello!"
+#   - "command 2"
+
+Gapple:
+  floating-text-top: "70:5:45"
+  image-path: "textures/items/apple_golden"
+  items:
+  - "276:0:1"
+  - "466:0:16"
+  helmet: 310
+  chestplate: 311
+  leggings: 312
+  boots: 313
+  commands:
+  - "effect {player} strenght 30 2"
+  
+NoDebuff:
+  floating-text-top: "120:100:120"
+  image-path: "textures/items/potion_bottle_splash_heal"
+  items:
+  - "276:0:1:sharpness:1"
+  - "322:0:3"
+  - "5:0:64"
+  helmet: "306:protection:1"
+  chestplate: "311:protection:2"
+  leggings: "312:protection:1"
+  boots: "309:protection:3"
+  commands:
+  - "effect {player} night_vision 700 0"
+  
+Ghost:
+  floating-text-top: "0:0:0"
+  image-path: "textures/items/nether_star"
+  items:
+  - "0:0:0"
+  helmet: 0
+  chestplate: 0
+  leggings: 0
+  boots: 0
+  commands: []
